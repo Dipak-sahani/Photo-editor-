@@ -23,7 +23,7 @@ Text color
 ✅ Canvas-Based Editing – Uses HTML5 <canvas> for rendering and manipulation.
 
 🖼️ Demo Screenshot
-demo.png
+![demo](./demo.png)
 
 
 🚀 How to Use
