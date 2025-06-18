@@ -32,7 +32,10 @@ Clone the repository
 bash
 Copy
 Edit
-git clone https://github.com/Dipak-sahani/Photo-editor-.git
+ ```bash
+   git clone https://github.com/Dipak-sahani/Photo-editor-.git
+
+   ```
 cd photo-editor
 Open index.html in your browser
 No server setup required — it's 100% frontend.
