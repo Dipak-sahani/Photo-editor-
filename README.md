@@ -66,5 +66,7 @@ Add filters (brightness, contrast, grayscale)
 
 Mobile responsive improvements
 
+**Disclaimer: The images used in this project are for demonstration purposes only. They are not intended for commercial use, resale, or any form of monetization.
+
 📄 License
 This project is open source and available under the MIT License.
