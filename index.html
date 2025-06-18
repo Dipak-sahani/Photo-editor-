@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Photo Edits</h1>
+    </header>
+    <div class="container">
+    <div class="editor-container">
+        <div class="toolbar">
+            <input type="file" id="uploadImage" accept="image/*">
+            <button id="upload">Upload</button>
+            <input type="file" id="uploadSticker" accept="image/*">
+            <button id="addText">Add Text</button>
+
+            <button id="undo">Undo</button>
+            <button id="reset">Reset</button>
+
+
+            <label>Brightness</label>
+            <input type="range" id="brightness" min="0" max="200" value="100">
+            <label>Contrast</label>
+            <input type="range" id="contrast" min="0" max="200" value="100">
+            <label>Grayscale</label>
+            <input type="range" id="grayscale" min="0" max="100" value="0">
+            <label>Opacity</label>
+            <input type="range" id="opacity" min="0" max="1" step="0.1" value="1">
+            <label>Image Opacity</label>
+            <input type="range" id="imageOpacity" min="0" max="1" step="0.1" value="1">
+            <label for="">Canvas Background</label><input type="color" id="canvasColor" value="#000000">
+            
+
+            <label>Selected Text</label>
+            <label id="font-size-lable">Font Size</label>
+            <input type="range" id="fontSize" min="10" max="100" value="20">
+            <label>Text Color</label>
+            <input type="color" id="textColor" value="#000000">
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times</option>
+            </select>
+            
+
+            <button id="addRectangle">Add Rectangle</button>
+            <button id="addCircle">Add Circle</button>
+        </div>
+        <div>
+            <button id="download">Download</button>
+            <!-- <button id="addTriangle">Add Triangle</button>
+            <button id="clearCanvas">Clear Canvas</button> -->
+        </div>
+        <!-- <div>
+            <label>Select Shape:</label>
+            <select id="shapeType">
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="pentagon">Pentagon</option>
+                <option value="line">Line</option>
+            </select>
+
+            <label>Size:</label>
+            <input type="number" id="shapeSize" min="10" max="300"             value="50">
+
+            <label>Color:</label>
+            <input type="color" id="shapeColor" value="#000000">
+
+            <label>Stroke Width:</label>
+            <input type="number" id="strokeWidth" min="1" max="10" value="2">
+            <label>Opacity:</label>
+            <input type="range" id="shapeOpacity" min="0" max="1" step="0.1" value="1">
+
+            <button id="addShape">Add Shape</button>
+
+        </div> -->
+        
+        <div id="modify-shape"></div>
+        
+        
+        
+    </div>
+    <div class="canvas-box">
+        <div class="canvas-container">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+    </div>
+    
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
